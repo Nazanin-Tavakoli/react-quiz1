@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Welcome.css'; // برای استایل‌دهی
+import './Welcome.css'; 
 
 const MovingButton = () => {
   useEffect(() => {
@@ -29,7 +29,6 @@ const MovingButton = () => {
       }, 16);
     };
 
-    // اجرای انیمیشن اولیه
     intro();
 
     const button = document.querySelector("button");
@@ -39,7 +38,6 @@ const MovingButton = () => {
       button.style.setProperty("--a", '');
     });
 
-    // پاک کردن event listeners در زمان unmount کامپوننت
     return () => {
       button.removeEventListener('pointermove', moveBg);
       button.removeEventListener('pointerover', () => clearInterval(x));

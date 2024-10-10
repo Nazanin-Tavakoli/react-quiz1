@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #121212; /* پس‌زمینه تیره */
+    background-color: #15152e; 
     color: #fff;
   }
   
@@ -12,7 +12,7 @@ body {
     justify-content: center;
     height: 100vh;
     text-align: center;
-    background-color: #1c1c1e; /* پس‌زمینه‌ی تیره‌تر برای صفحه ورود */
+    background-color: #15152e; 
   }
   
   .quiz-header {
@@ -35,8 +35,14 @@ body {
   
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin: 5px 0;
+    color: #ffffff;
+  }
+  .Tex-one {
+    font-size: 0.8rem;
+    margin: 6px 0;
+    color: #ffffff;
   }
   
   @property --a {
@@ -81,10 +87,9 @@ button:before {
     content: "";
     position: absolute;
     inset: 0em;
-    /** here's the magic. A blur and a svg filter */
+    
     filter: blur(12px) url(#goo) drop-shadow(0 .25em .5em hsla(0deg, 0%, 0%, 0.8)); 
-    /** followed by a radial-gradient which causes the
-    gooey effect to follow mouse-position */
+    
     background-image:
         linear-gradient(0deg,var(--button),var(--button)),
         radial-gradient(
@@ -92,8 +97,7 @@ button:before {
             hsla(var(--hue), 77%, 77%, var(--a)) 0%,
             transparent 90%
         );
-    /** and finally a background-clip so the radial-gradient
-    is larger than the linear-gradient */
+    
     background-clip: content-box, border-box;
     padding: 24px;
     z-index: -1;

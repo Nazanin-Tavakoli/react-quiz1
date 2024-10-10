@@ -1,6 +1,6 @@
 import React from 'react';
-import './Welcome.css'; // برای استایل‌دهی
-import MovingButton from './button'; // آدرس به کامپوننت دکمه
+import './Welcome.css'; 
+import MovingButton from './button'; 
 
 const Welcome = () => {
   return (
@@ -10,7 +10,7 @@ const Welcome = () => {
         <h1>The React Quiz</h1>
       </div>
       <p>Welcome to the react quiz!</p>
-      <p>15 questions to test your React mastery</p>
+      <p className='Tex-one'>15 questions to test your React mastery</p>
       
     
       <MovingButton />
