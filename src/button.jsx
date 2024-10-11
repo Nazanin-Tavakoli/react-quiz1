@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Welcome.css'; 
 
-const MovingButton = () => {
+const MovingButton = ({onClick}) => {
   useEffect(() => {
     let x;
     const moveBg = (e) => {

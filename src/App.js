@@ -1,11 +1,18 @@
-import React from 'react';
 import Welcome from './Welcome'; 
+import React, { useState } from 'react';
+import Difficulty from './Difficulty';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('Welcome'); // حالت اولیه صفحه شروع است
+  const handleStartQuiz = () => {
+    setCurrentPage('Difficulty'); 
+  };
   return (
-    <div className="App">
-      <Welcome />
-    </div>
+    <div>
+    {currentPage === 'Welcome' && <Welcome onStart={handleStartQuiz} />}
+    {currentPage === 'Difficulty' && <Difficulty />}
+  </div>
+    
   );
 }
 
