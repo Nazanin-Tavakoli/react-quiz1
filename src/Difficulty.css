@@ -24,12 +24,10 @@
 }
 
 .button.active {
-    background-color: #ffa500; 
+    background-color: #4b417b;
+    
 }
 
-.button.submitted {
-    background-color: #32cd32; 
-}
 
 .stars {
     display: none; 

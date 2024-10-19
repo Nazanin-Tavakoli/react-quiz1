@@ -5,6 +5,7 @@ export const beginnerQuestions = [
         options: ["A library for JavaScript", "A programming language", "A database", "A web server"],
         answer: "A library for JavaScript"
     },
+
 ];
 
 export const intermediateQuestions = [
