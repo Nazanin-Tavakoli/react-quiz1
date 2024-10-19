@@ -19,7 +19,7 @@ function App() {
     return (
         <div>
             {currentPage === 'Welcome' && <Welcome onStart={handleStartQuiz} />}
-            {currentPage === 'Difficulty' && <Difficulty onSelectLevel={() => setCurrentPage('LevelSelector')} />}
+            {currentPage === 'Difficulty' && <Difficulty onSelectLevel={handleSelectLevel} />}
             {currentPage === 'Quiz' && selectedLevel && <Quiz level={selectedLevel} />}
 
             
