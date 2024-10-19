@@ -24,15 +24,15 @@
 }
 
 .button.active {
-    background-color: #ffa500; /* رنگ دکمه فعال */
+    background-color: #ffa500; 
 }
 
 .button.submitted {
-    background-color: #32cd32; /* رنگ دکمه بعد از ارسال */
+    background-color: #32cd32; 
 }
 
 .stars {
-    display: none; /* در حالت عادی مخفی */
+    display: none; 
     position: absolute;
     top: 0;
     left: 50%;

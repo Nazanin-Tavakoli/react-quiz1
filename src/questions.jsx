@@ -1,4 +1,3 @@
-// questions.jsx
 
 export const beginnerQuestions = [
     {
@@ -6,7 +5,6 @@ export const beginnerQuestions = [
         options: ["A library for JavaScript", "A programming language", "A database", "A web server"],
         answer: "A library for JavaScript"
     },
-    // سوالات دیگر...
 ];
 
 export const intermediateQuestions = [
@@ -15,7 +13,6 @@ export const intermediateQuestions = [
         options: ["For state management", "For handling side effects", "For rendering HTML", "For styling components"],
         answer: "For handling side effects"
     },
-    // سوالات دیگر...
 ];
 
 export const professionalQuestions = [
@@ -24,5 +21,4 @@ export const professionalQuestions = [
         options: ["To optimize functional components", "To create class components", "To render lists", "To handle state"],
         answer: "To optimize functional components"
     },
-    // سوالات دیگر...
 ];

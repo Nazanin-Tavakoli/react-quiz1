@@ -1,19 +1,19 @@
 import Welcome from './Welcome';
 import React, { useState } from 'react';
 import Difficulty from './Difficulty';
-import Quiz from './Quiz'; // اضافه کردن کامپوننت Quiz
+import Quiz from './Quiz'; 
 
 function App() {
-    const [currentPage, setCurrentPage] = useState('Welcome'); // حالت اولیه صفحه شروع است
-    const [selectedLevel, setSelectedLevel] = useState(null); // وضعیت برای ذخیره‌سازی سطح انتخابی
+    const [currentPage, setCurrentPage] = useState('Welcome'); 
+    const [selectedLevel, setSelectedLevel] = useState(null); 
 
     const handleStartQuiz = () => {
         setCurrentPage('Difficulty');
     };
 
     const handleSelectLevel = (level) => {
-      setSelectedLevel(level); // تنظیم سطح انتخاب‌شده
-      setCurrentPage('Quiz'); // به صفحه آزمون تغییر می‌کند
+      setSelectedLevel(level); 
+      setCurrentPage('Quiz');
   };
 
     return (

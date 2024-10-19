@@ -12,15 +12,15 @@ const SimpleButton = ({ onClick, label }) => {
 
 
 const Difficulty = ({ onSelectLevel }) => {
-    const [selectedLevel, setSelectedLevel] = useState(null); // وضعیت برای ذخیره‌سازی سطح انتخابی
+    const [selectedLevel, setSelectedLevel] = useState(null); 
 
     const handleLevelClick = (level) => {
-        setSelectedLevel(level); // تنظیم سطح انتخابی
+        setSelectedLevel(level); 
     };
 
     const handleSubmitClick = () => {
         if (selectedLevel) {
-            onSelectLevel(selectedLevel); // ارسال سطح انتخابی
+            onSelectLevel(selectedLevel); 
         } else {
             alert("Please select a level.");
         }

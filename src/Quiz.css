@@ -1,6 +1,4 @@
-/* Quiz.css */
 
-/* استایل برای سوالات */
 .quiz-container {
     max-width: 600px;
     margin: 0 auto;
@@ -16,7 +14,6 @@
     margin-bottom: 20px;
 }
 
-/* استایل برای دکمه‌های گزینه‌ها */
 .quiz-container button {
     display: block;
     width: 100%;
@@ -40,7 +37,6 @@
     cursor: not-allowed;
 }
 
-/* استایل برای نتیجه آزمون */
 .result {
     font-size: 20px;
     color: #333;

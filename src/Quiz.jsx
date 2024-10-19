@@ -1,4 +1,3 @@
-// Quiz.jsx
 
 import React, { useState } from 'react';
 import { beginnerQuestions, intermediateQuestions, professionalQuestions } from './questions';
@@ -8,18 +7,17 @@ function Quiz({ level }) {
     const [score, setScore] = useState(0);
     const [showResult, setShowResult] = useState(false);
 
-    // انتخاب سوالات بر اساس سطح
     const questions = 
         level === 'beginner' ? beginnerQuestions :
         level === 'intermediate' ? intermediateQuestions :
         level === 'professional' ? professionalQuestions : [];
-
+        if (questions.length === 0) {
+            return <div>هیچ سوالی برای این سطح وجود ندارد.</div>;
+        }
     const handleAnswer = (selectedOption) => {
-        // بررسی پاسخ صحیح
         if (selectedOption === questions[currentQuestionIndex].answer) {
             setScore(score + 1);
         }
-        // رفتن به سوال بعدی یا نمایش نتیجه
         const nextQuestion = currentQuestionIndex + 1;
         if (nextQuestion < questions.length) {
             setCurrentQuestionIndex(nextQuestion);
