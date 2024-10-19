@@ -47,8 +47,8 @@ const MovingButton = ({onClick}) => {
   return (
     <>
     <GooFilter /> 
-    <button className="moving-button">
-      Let's get started
+    <button className="moving-button" onClick={onClick}>
+     Let's get started
     </button>
     </>
   );
